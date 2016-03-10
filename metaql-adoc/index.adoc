@@ -1,0 +1,32 @@
+:source-highlighter: coderay
+:toc-position: left
+
+
+[width="100%"]
+= MetaQL Specification
+
+:sectnums:
+
+include::overview.adoc[]
+
+
+== Select Queries
+
+== Graph Queries
+
+== Path Queries
+
+== Aggregation Queries
+
+== Domain Ontology Integration
+
+== Vital AI Implementation
+
+== Vital Service Lucene Implementation
+== Vital Service Sparql Implementation
+== Vital Service DynamoDB Implementation
+== Vital Service MongoDB Implementation
+== Vital Service IndexDB Implementation (Combine Indexing Service with Database Service)
+== Vital Service Vital Prime Implementation
+== Vital Service Spark Implementation
+
