@@ -1,0 +1,37 @@
+== Graph Queries
+
+Example:
+
+Given a set of Email messages with links to senders and receivers, find all messages sent by "john@example.org", excluding those he sent to himself.
+
+[source, groovy]
+GRAPH {
+    value segments: ["mydata"]
+ARC {
+          node_constraint { Email.class }
+          constraint { "?person1 != ?person2" }
+          ARC_AND {
+              ARC {
+                edge_constraint { Edge_hasSender.class }
+                node_constraint {Person.props().emailAddress.equalTo("john@example.org")
+                node_constraint { Person.class }
+                node_provides { "person1 = URI" }   
+             }
+              ARC {        
+                edge_constraint { Edge_hasRecipient.class }
+                node_constraint { Person.class }
+                node_provides { "person2 = URI" } 
+             }
+          }
+        } 
+    }
+
+The results are returned in a ResultList containing GraphMatch objects, each of which contains a set of URIs of the matching graph elements.
+
+For the above example, each result includes:
+
+* URI of an email message
+* URI of the edge connecting the email to a sender
+* URI of the sender, which would the the URI of the Person with email addresss "john@example.org"
+* URI of the edge connecting the email to a recipient
+* URI of the recipient Person, which is enforced to be not the same as the sender

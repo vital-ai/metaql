@@ -9,14 +9,13 @@
 
 include::overview.adoc[]
 
+include::selectqueries.adoc[]
 
-== Select Queries
-
-== Graph Queries
+include::graphqueries.adoc[]
 
 == Path Queries
 
-== Aggregation Queries
+include::aggregationqueries.adoc[]
 
 == Domain Ontology Integration
 
