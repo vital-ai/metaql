@@ -1,0 +1,14 @@
+== Select Queries
+
+Example:
+
+[source, groovy]
+SELECT {
+value limit: 100
+	value offset: 0
+	value segments: ["mydata"]
+constraint { Person.class }
+constraint { Person.props().name.equalTo("John" ) }
+}
+
+The results are returned in a ResultList containing GraphObjects.
