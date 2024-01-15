@@ -929,6 +929,15 @@ section * {
   color: #ffffff;
   font-weight: 500;
 }
+
+.header-1-sub h4 {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: normal;
+  color: #ffffff;
+  font-weight: 500;
+}
+
 @media (max-width: 600px) {
   .header-1-sub h3 {
     font-size: 30px;
