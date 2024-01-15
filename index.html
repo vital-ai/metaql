@@ -35,7 +35,7 @@
 
         <link rel="stylesheet" href="css/style.css">
 
-        <script type="text/javascript">
+<script type="text/javascript">
         
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-30297498-1']);
@@ -63,14 +63,17 @@
                     <div class="navbar col-sm-12 navbar-fixed-top" role="navigation">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle"></button>
-                            <a class="brand" href="https://vital.ai" target="_blank"><img src="img/vitalai_offwhite.png" width="160" alt=""></a>
+                            <a class="brand" href="http://vital.ai" target="_blank"><img src="img/vitalai_offwhite.png" width="160" alt=""></a>
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="nav pull-right">
                                 <li>
-                                <a href="#home">HOME</a>
-			                    </li>
+                                    <a href="#home">HOME</a>
+			      </li>
 
+<li>
+                                    <a target=_blank href="metaql-doc/index.html">DOCS</a>
+			      </li>
 			      
 
                                 <li>
@@ -96,19 +99,26 @@
            <div class="row">
               
             <div class="col-sm-6 col-sm-offset-3" align="center">
-                <h3>AgentContainer</h3><br>
-              <h4>A standard to containerize A.I. Agent Implementations
-              </h4>
-	      <h4>
-	      Vital AI Agent Ecosystem Implementation
-	      </h4>      
+                <h3>MetaQL: Meta Query Language</h3><br>
+              <p>MetaQL provides a Domain Specific Language
+                (DSL) for database queries, providing an abstraction
+                across NoSQL, SQL, Graph, and Apache Spark.  This
+                allows the same query to be executed regardless of the
+	      backend implementation.</p>
+	      <p>
+	      Vital AI provides an implementation of the MetaQL
+                specification and connectors to a variety of databases
+                including: MySQL and MySQL compatible, Amazon
+                Redshift, DynamoDB, Allegrograph Sparql Triplestore,
+                and Apache Spark-SQL (Dataframes).
+	      </p>
     <br>
            <div class="col-sm-4 col-sm-offset-4">
                 <div class="btns">
-               <a class="btn btn-primary" href="https://www.vital.ai/agent-ecosystem.html" target="_blank">
-                   <span class="fui-gear">
+               <a class="btn btn-primary" href="metaql-doc/index.html" target="_blank">
+                   <span class="fui-document">
                    </span> 
-                    Vital AI Agent Ecosystem
+                    View Specification
                     </a>
                     
                </div>
@@ -122,47 +132,6 @@
            </div>
       </section>
     
-      
-     <section class="content-5">
-    <div class="container">
-        <img src="/img/chat-ai-screenshot-writing.png" width="100%" alt="">
-        <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-                <h3>AgentContainer</h3>
-            </div>
-        </div>
-        <div class="row features">
-            <div class="col-sm-4 col-sm-offset-2">
-                <span class="fui-gear"> </span>
-                <h6>Container Technologies</h6>
-                <p>Initial implementation using Docker.  Other technologies, such as Kubernetes, to be incorporated.</p>
-            </div>
-            <div class="col-sm-4 col-sm-offset-1">
-                <span class="fui-gear"> </span>
-                <h6>Deployment Environment</h6>
-                <p>Initial implementation using AWS.  Other deployment environments to be added.</p>
-            </div>
-        </div>
-        <div class="row features">
-            <div class="col-sm-4 col-sm-offset-2">
-                <span class="fui-gear"> </span>
-                <h6>Any Agent Implementation</h6>
-                <p>AgentContainer standardizes the container of an Agent and not the underlying Agent implementation itself.</p>
-            </div>
-            <div class="col-sm-4 col-sm-offset-1">
-                <span class="fui-gear"> </span>
-                <h6>Supporting Standards</h6>
-                <p>Standards addressing communication between the deployment environment and the container. One such is AIMP: Artificial Intelligence Messsaging Protocol. (<a target=_blank href="http://aimp.vital.ai/">link</a>)</p>
-            </div>
-        </div>
-    </div>
-</section>     
-        
-            
-            
-            
-            
-            
     <a name="contact"></a>
           
       <section class="contacts-2">
@@ -188,7 +157,7 @@
                     <a target=_blank href="http://vitalai.com"><span class="fui-link"></span>Blog https://blog.vital.ai</a>
                     <br>
                     
-                    <a target=_blank href="http://vital.ai"><span class="fui-link"></span>https://vital.ai</a>
+                    <a target=_blank href="http://vital.ai"><span class="fui-link"></span>http://vital.ai</a>
                     <br>
 
                 </div>
@@ -233,6 +202,9 @@
     <script src="common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
     <script src="common-files/js/startup-kit.js"></script>
     
+    <script src="//cdnjs.cloudflare.com/ajax/libs/sockjs-client/0.3.4/sockjs.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/vertx/2.0.0/vertxbus.min.js"></script>
+    <script src="js/mailing.js" type="text/javascript"></script>
     
   </body>
 </html>
