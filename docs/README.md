@@ -1,5 +1,2 @@
-# metaql
-MetaQL
-=======
-
+# Page
 
