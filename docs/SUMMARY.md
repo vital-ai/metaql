@@ -2,6 +2,7 @@
 
 * [MetaQL](README.md)
 * [Overview](overview.md)
+* [Domain Ontology](domain-ontology.md)
 * [Select Query](select-query.md)
 * [Path Query](path-query.md)
 * [Graph Query](graph-query.md)
